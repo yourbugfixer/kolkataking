@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://www.kolkataking.site/sitemap.xml
+User-agent: *
+
+Disallow:https://www.kolkataking.site/login
+Disallow:https://www.kolkataking.site/admin
+Disallow:https://www.kolkataking.site/admin/
+Disallow:https://www.kolkataking.site/404-notfound

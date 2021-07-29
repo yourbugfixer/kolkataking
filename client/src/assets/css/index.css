@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import "./admin.css";
+@import "./login.css";
+@import "./dashboard.css";
+
+:root {
+  --light-primary: #e1f0ff;
+}
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+.bg-light-primary {
+  background-color: var(--light-primary) !important;
+}
+
+.text-light-primary {
+  color: #3699ff;
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+  border-color: black !important;
+}
+.card.card-custom {
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  border: 0;
+}
+
+.blinking-text {
+  animation: blinker 1s linear infinite;
+  text-decoration: none;
+}
+
+.blinking-text:hover {
+  text-decoration: none;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+[type="date"],
+[type="month"] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button,
+[type="month"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator,
+[type="month"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  .banner-text {
+    font-size: 1.3rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .page_title {
+    font-size: 1.7rem;
+  }
+
+  [type="date"] {
+    margin-left: auto;
+  }
+
+  .auth-inner {
+    width: 335px !important;
+    padding: 40px !important;
+  }
+  .header-text {
+    font-size: 1.5rem !important;
+    letter-spacing: 0.063rem !important;
+  }
+  .header-desc {
+    font-size: 1rem;
+  }
+  .date_btn {
+    width: 100% !important;
+  }
+  .error-sm {
+    display: block;
+    margin-left: 10.313rem !important;
+  }
+  .brand-image {
+    height: 100px !important;
+    width: 105px !important;
+  }
+}
+.error-sm {
+  margin-left: 1rem;
+}
+.header-text {
+  letter-spacing: 0.438rem;
+}
+.brand-image {
+  height: 145px;
+  width: 150px;
+  border-radius: 50%;
+  border: solid 2px red;
+}
+
+.hr {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 85%;
+}
+
+/* <------------- Not found Page ----------------> */
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  padding: 0 15px;
+}
+.notfound .notfound-404 {
+  position: relative;
+  line-height: 150px;
+  margin-bottom: 25px;
+}
+.notfound .notfound-404 h1 {
+  font-family: titillium web, sans-serif;
+  font-size: 186px;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  background: url(../images/bg.png);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+.notfound h2 {
+  font-family: titillium web, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+.notfound p {
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.notfound a {
+  font-family: titillium web, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  background: #5c91fe;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 1px;
+  margin-top: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound a:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 110px;
+    line-height: 110px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 120px;
+  }
+}
+
+.demo_table th,
+td {
+  vertical-align: middle !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: lightblue !important;
+  color: red;
+}
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: red;
+}
+
+.nav-item .active {
+  background: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.nav-item a {
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-radius: 30px;
+}
